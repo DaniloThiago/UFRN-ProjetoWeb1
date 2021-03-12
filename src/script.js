@@ -1,2 +1,5 @@
 const calc = document.querySelector('#calc');
-calc.innerHTML = "oi";
+
+function clickButton(el) {
+    console.log(el.value)
+}
