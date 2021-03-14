@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<!-- Danilo Thiago Alves de Oliveira -->
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +11,6 @@
 
 <body>
     <div id="calculator">
-        <div>
         <input id="screen" type="text" value="0" disabled />
 
         <div id="buttons">
@@ -19,26 +19,25 @@
             <button type="button" onclick="clickButton(this)" class="operator min" value="-">&minus;</button>
             <button type="button" onclick="clickButton(this)" class="operator mul" value="*">&times;</button>
             <button type="button" onclick="clickButton(this)" class="operator div" value="/">&divide;</button>
-            <button type="button" onclick="clickButton(this)" class="decimal" value=".">&comma;</button>
-
+            
             <button type="button" onclick="clickButton(this)" value="7">7</button>
             <button type="button" onclick="clickButton(this)" value="8">8</button>
             <button type="button" onclick="clickButton(this)" value="9">9</button>
-
+            
             <button type="button" onclick="clickButton(this)" value="4">4</button>
             <button type="button" onclick="clickButton(this)" value="5">5</button>
             <button type="button" onclick="clickButton(this)" value="6">6</button>
-
+            
             <button type="button" onclick="clickButton(this)" value="1">1</button>
             <button type="button" onclick="clickButton(this)" value="2">2</button>
             <button type="button" onclick="clickButton(this)" value="3">3</button>
-
+            
+            <button type="button" onclick="clickButton(this)" class="decimal" value=".">&comma;</button>
             <button type="button" onclick="clickButton(this)" class="btn-lg zero" value="0">0</button>
             <button type="button" onclick="clickButton(this)" class="btn-lg equal" value="equal">=</button>
             <button type="button" onclick="clickButton(this)" class="clear" value="clear">AC</button>
 
         </div>
-    </div>
     </div>
     </section>
     <script src="./src/script.js"></script>

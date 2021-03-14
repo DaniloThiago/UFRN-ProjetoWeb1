@@ -16,7 +16,9 @@ const operator = {
 
 var numberOne, op;
 function clickButton(el) {
-    
+    var countDot = ( screen.value.match( RegExp('\\.','g') ) || [] ).length;
+    if( countDot > 0  && el.value=='.') return;
+
     switch (el.value) {
         case "equal":
             screen.value = numberOne = operator[op](+numberOne, +screen.value);
@@ -45,8 +47,11 @@ function clickButton(el) {
             screen.value = el.value;
             op = el.value;
             break;
+        case '.':
+            screen.value += el.value;
+            break;
         default:
-            if(!!+screen.value && screen.value != '0') {
+            if((!!+screen.value && screen.value != '0') || screen.value == '0.') {
                 screen.value += el.value;
             } else {
                 screen.value = el.value;
